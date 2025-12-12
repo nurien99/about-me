@@ -1,0 +1,147 @@
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5; 
+            color: #333;
+            padding: 20px;
+        }
+
+        /* 2. Layout Container - Centered column */
+        body > * {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*3. Header Styling*/
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-top: 20px;
+        }
+
+        h1 {
+            color: #1e63cc;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* 4. Image Styling - Circular Profile */
+        .myselfpic {
+            display: block;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%; /* To make it a circle */
+            margin: 0 auto 40px auto;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ddd; /* Gray placeholder if image is missing - Fallback*/
+        }
+
+        /* 5. Section Cards */
+        section {
+            background: #ffffff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+        }
+
+        h2 {
+            color: #3498db; /* Bright Blue Accent */
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* 6. Education Specifics */
+        .education-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        /* Last child untuk make sure tak ada dah gap garis putus putus tu sebab ni last child */
+        .education-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .period {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .institution {
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        .program-details {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .cgpa {
+            margin-top: 5px;
+            display: inline-block;
+            background-color: #e8f6f3; /* Mint Green Background */
+            color: #16a085; /* Darker Green Text */
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* 7. Lists */
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .goals b {
+            color: #2c3e50;
+        }
+
+        /* 8. Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            section { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+            .education-header { flex-direction: column; }
+            .period { margin-top: 5px; margin-bottom: 5px; }
+        }
+
+
+
